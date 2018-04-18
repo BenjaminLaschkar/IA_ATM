@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>ATM</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>ATM control</h1>
+            </div>
+            <div id="content">
+                <form method="post"  action="{{ url_for('sendcommand') }}" target=hiddenFrame>
+                  <label for="command">Please enter the ATM command:</label>
+                  <input type="text" name="command" /><br/>
+                  <input type="submit" />
+                </form>
+      <iframe name="hiddenFrame" class="hide"></iframe>
+      </div>
+    </body>
+</html>

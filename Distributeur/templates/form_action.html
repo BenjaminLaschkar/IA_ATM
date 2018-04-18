@@ -1,0 +1,16 @@
+ <html>
+    <head>
+        <title>Smart Home control</title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <div class="title">
+                <h1>Smart Home control</h1>
+            </div>
+            <div id="content">
+                You executed command "<strong>{{command}}</strong>" .
+            </div>
+        </div>
+    </body>
+</html>
